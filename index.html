@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="icon" href="./img/Logo.png">
     <title>Calculadora</title>
 </head>
+
 <body>
     <header class="logo">
         <div class="img">
@@ -19,93 +21,80 @@
         <div class="container">
             <div class="toggle">
                 <div class="btn-toggle">
-                    <div class="circle"></div>
+                    <input id="switch" type="checkbox" name="theme">
+                    <label class="label" for="switch">
+                        <div class="ball"></div>
+                    </label>
                 </div>
             </div>
             <div class="calculadora">
-                <div class="resultado">
-                    <input type="number" id="calc">
-                    <input type="number" id="math">
-                </div>
-                <div class="teclado">
+                <div class="wrapper">
+                    <div class="resultado">
+                        <input type="number" id="calc">
+                        <input type="number" id="math">
+                    </div>
                     <div class="content">
                         <ul>
+                            <li>AC</li>
                             <li>
-                                <button  class="btn-style">AC</button>
-                            </li>
-                            <li>
-                                <button  class="btn-style"><img src="./img/sybol-math.png" alt="simbolo de metade"></button>
-                            </li>
-                            <li>
-                                <button  class="btn-style">%</button>
-                            </li>
-                            <li>
-                                <button  class="btn-style">÷</button>
-                            </li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.125 21.875L19.2708 5.72916M15.625 14.5833L18.75 19.2708M21.875 14.5833L17.1875 21.875M3.125 4.16666L9.375 10.4167M3.125 10.4167L9.375 4.16666"
+                                    stroke="#F925A2" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                            <li class="btn-style">%</li>
+                            <li class="btn-style">÷</li>
+                        </ul>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li class="btn-purple">X</li>
+                        </ul>
+                        <ul>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li class="btn-purple">-</li>
+                        </ul>
+                        <ul>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li class="btn-purple">+</li>
                         </ul>
                         <ul>
                             <li>
-                                <button>1</button>
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35.0989 25.5C35.0989 20.1711 30.8973 14.8797 24.3574 14.8797C19.076 14.8797 16.4639 18.7444 15.3517 20.8008H18.654C18.9061 20.8008 19.1479 20.8998 19.3261 21.076C19.5044 21.2523 19.6046 21.4913 19.6046 21.7406C19.6046 21.9899 19.5044 22.2289 19.3261 22.4052C19.1479 22.5814 18.9061 22.6805 18.654 22.6805H12.9506C12.6985 22.6805 12.4567 22.5814 12.2784 22.4052C12.1001 22.2289 12 21.9899 12 21.7406V16.1015C12 15.8522 12.1001 15.6132 12.2784 15.4369C12.4567 15.2607 12.6985 15.1617 12.9506 15.1617C13.2027 15.1617 13.4445 15.2607 13.6227 15.4369C13.801 15.6132 13.9011 15.8522 13.9011 16.1015V19.5094C15.2395 17.1748 18.3384 13 24.3574 13C32.0817 13 37 19.2688 37 25.5C37 31.7312 32.0817 38 24.3574 38C20.6616 38 17.5856 36.5526 15.3954 34.3496C14.2333 33.1777 13.3114 31.7945 12.6806 30.2763C12.6332 30.1622 12.6089 30.0399 12.6093 29.9164C12.6097 29.793 12.6346 29.6709 12.6827 29.557C12.7308 29.4431 12.8012 29.3397 12.8897 29.2527C12.9782 29.1656 13.0832 29.0967 13.1987 29.0498C13.3141 29.0029 13.4378 28.979 13.5627 28.9793C13.6875 28.9797 13.811 29.0043 13.9262 29.0519C14.0414 29.0995 14.146 29.169 14.234 29.2565C14.322 29.3441 14.3917 29.4479 14.4392 29.562C14.9764 30.8552 15.7614 32.0334 16.7509 33.032C18.597 34.8929 21.192 36.1203 24.3574 36.1203C30.8973 36.1203 35.0989 30.8289 35.0989 25.5Z"
+                                        fill="#1C1C1C" />
+                                </svg>
                             </li>
-                            <li>
-                                <button>2</button>
-                            </li>
-                            <li>
-                                <button>3</button>
-                            </li>
-                            <li>
-                                <button class="btn-purple">X</button>
-                            </li>
+                            <li>0</li>
+                            <li>.</li>
+                            <li class="btn-purple">=</li>
                         </ul>
-                        <ul>
-                            <li>
-                                <button>4</button>
-                            </li>
-                            <li>
-                                <button>5</button>
-                            </li>
-                            <li>
-                                <button>6</button>
-                            </li>
-                            <li>
-                                <button class="btn-purple">-</button>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <button>7</button>
-                            </li>
-                            <li>
-                                <button>8</button>
-                            </li>
-                            <li>
-                                <button>9</button>
-                            </li>
-                            <li>
-                                <button class="btn-purple">+</button>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <button><img src="./img/reload.png" alt="botão para desfazer digitação"></button>
-                            </li>
-                            <li>
-                                <button>0</button>
-                            </li>
-                            <li>
-                                <button><img src="./img/circle.png" alt="Botão ponto"></button>
-                            </li>
-                            <li>
-                                <button class="btn-purple">=</button>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="barra">
+                        <div class="line"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <footer>
+        <div class="footer">
+            <h4>
+                Design by: Nathalia Martins
+            </h4>
+        </div>
+    </footer>
 
     <script src="./main.js"></script>
 </body>
+
 </html>
